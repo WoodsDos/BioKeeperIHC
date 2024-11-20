@@ -1,0 +1,323 @@
+.body-container{
+    background-color:rgb(203, 222, 186);
+    
+    
+    }
+    
+    .main{
+        margin-top: 40px;
+    height: 100%;
+    
+    
+    }
+    
+    .open-task-container{
+        
+        
+        background-color:rgb(203, 222, 186);
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 98%;
+        margin-left:1% ;
+    
+        padding-bottom: 2%;
+    
+    }
+    .boton-regreso, .boton-regreso-responsive {
+    
+        height: 35px;
+        width: 35px;
+        border-radius: 10px;
+        display:flex;
+        margin-top: 30px;
+        margin-left: 20px;
+        background-image: url("img/background/return-arrow.png");
+        background-size: 190%;
+        background-position: center;
+        cursor:pointer;
+        z-index: 20;
+    }
+    
+    .boton-regreso-responsive{
+    
+    margin-left: 0px;
+    
+    
+    }
+    
+    
+    .menu-left {
+    
+        background-color: rgb(65,159, 52) ;
+        color: rgb(255, 255, 255);
+        
+        width: 20%;
+        height: 100%;
+        padding-bottom: 2%;
+        }
+        
+        
+    .menu-left h3{
+        font-family: Poppins, sans-serif;
+        font-weight: 700;
+    
+        position: relative;
+        margin-left: 10%;
+        margin-top: 20%;
+        
+    } 
+    
+    .menu-left p{
+        font-family: "Poppins", sans-serif;
+        
+        position: relative;
+        margin-top: 300px;
+        margin-left: 20px;
+        font-size: smaller;
+        padding-left: 10px;
+        
+        }
+        
+    
+        .menu-left p:hover{
+            text-decoration: underline;
+            cursor:pointer;
+            }
+            
+    
+    
+    .task-panel{
+    
+        background-color: white ;
+        border:  3px solid rgb(65,159, 52);
+        position: relative;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        gap: 20px;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        
+    }
+    
+    .tasklist{
+    
+        align-items: center;
+        gap: 50px;
+        box-sizing: border-box;
+    
+    }
+
+    .tasklist h3{
+    
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+    }
+    
+    
+    .task-title p{
+        font-family: Poppins;
+        font-weight: 700;
+    position: center;
+    padding-top: 50px;
+ 
+    
+    
+    }
+    
+    
+    .task-header{
+        width: 240px;
+        height: 70px;
+        background-color: #419F34;
+        border-radius: 20px;
+        display: flex;
+        align-items:center;
+    }
+    
+    
+    .task-header h4{
+    color: white;
+    font-family: "Nunito",sans-serif;
+    
+    }
+    
+    .task-header img{
+    padding: 10px;
+    
+    }
+    .task-item{
+    
+    background-color:rgb(231,239, 205) ;
+    
+    display: flex;
+    align-items:center;
+    border-radius: 20px;
+    border: 1px solid rgb(65,159, 52);
+    
+    }
+    
+    .checkbox-custom{
+    appearance: none;
+    width: 40px; 
+    height: 41px; 
+    border: 3px solid rgb(72, 60,31);
+    border-radius: 10px; 
+    outline: none; 
+    cursor: pointer; 
+    position: relative; 
+    
+    }
+    .checkbox-custom:checked {
+    background-size: 39.5px;
+    background-image: url(img/background/customCheck.png);
+    background-position: center;
+    }
+    
+    
+    .plant-name{
+    
+    font-family: Nunito, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    color: #419F34;
+    padding-left: 17px;
+    
+    }
+    
+    
+    .return-to-tasks{
+    
+    
+        display:flexbox;
+    }
+    .return-to-tasks h4{
+    
+    position:absolute;
+    
+    left: 60px;
+    color: #419F34;
+    font-family: Nunito, sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    
+    }
+    
+    .topbar{
+        width: 100%;
+        
+        display: none !important;
+    
+    }
+    
+    
+    .topbar h2{
+        font-family: Nunito, sans-serif;
+        position: relative;
+        margin-top: 2.5%;
+        margin-left: 20%;
+        color:rgb(65,159, 52);
+    }
+    
+    .task-division{
+    
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2.5%;
+        }
+    .errorMessage h1{
+        font-family: Poppins,sans-serif;
+        font-size: 1.7rem;
+    }
+
+    .errorMessage p{
+        font-family: Nunito ,sans-serif;
+        font-size: 1rem;
+    }
+    .linkVolver{
+        font-family: Nunito ,sans-serif;
+        font-size: 1rem;
+        text-decoration: none;
+    }
+        
+    
+    @media(max-width:900px){
+    
+    
+    
+    .menu-left{display: none;}
+    
+    .task-panel{
+    
+    height: 90%;
+    
+    }
+    .task-header, .task-item{
+    
+        width: 85%;
+    
+    }
+    
+    .task-item img{
+    display: none;
+    
+    }
+    
+    .task-item p{
+    
+    font-size: medium;
+    
+    }
+    
+    
+    .topbar{
+    
+        display: contents !important;
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 100%;
+        
+        }
+    
+        .boton-regreso-responsive{
+       position: relative;
+       margin-left: 0.5%;
+        }
+        .task-division{
+            flex-wrap: wrap ;
+            padding-bottom: 2%;
+          }
+        
+        .topbar h2{
+            margin-right: 25%;
+            margin-top: 7.5%;
+            position: relative;
+        }
+    
+      
+        
+    
+    }
+
+
+    @media(max-width:425px){
+.topbar{
+
+
+display: flex;
+
+}
+
+.topbar h2{
+    margin-right: 5%;
+    margin-top: 10.5%;
+
+}
+
+
+    }

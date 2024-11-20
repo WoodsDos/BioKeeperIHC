@@ -1,0 +1,235 @@
+/* General Styles */
+body {
+    margin: 0;
+    background-image: url("img/background/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Mensaje Bienvenido */
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.welcome h1 {
+    font-family: Poppins, sans-serif;
+    color: #419F34;
+    font-weight: 600;
+    font-size: 84px;
+    text-align: center;
+    padding: 30px;
+}
+
+.welcome h3 {
+    font-family: Nunito, sans-serif;
+    color: #483C1F;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* About EcoPafi */
+.aboutEcoPafi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.info-ecoPafi h1 {
+    font-family: Poppins, sans-serif;
+    color: #483C1F;
+    font-weight: 600;
+    font-size: 72px;
+    text-align: center;
+    padding: 50px;
+}
+
+.info-ecoPafi p {
+    font-family: Nunito, sans-serif;
+    color: #483C1F;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 200px;
+    line-height: 3rem;
+}
+
+/* Misión y Visión */
+.mision-vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    padding: 200px 0;
+    flex-wrap: wrap;
+}
+
+.vision, .mision {
+    color: white;
+    padding: 50px 100px;
+    background-color: #419F34;
+    border-radius: 16px;
+    width: 35%;
+    box-shadow: 0px 4px 4px rgb(134, 133, 133);
+}
+
+.vision h1, .mision h1 {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.vision p, .mision p {
+    font-family: Nunito, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+/* Equipo EcoPafi */
+.teamMembers h1 {
+    font-family: Poppins, sans-serif;
+    color: #483C1F;
+    font-weight: 600;
+    font-size: 72px;
+    text-align: center;
+}
+
+.equipoEcoPafi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    padding: 100px 0;
+    flex-wrap: wrap;
+}
+
+.equipoEcoPafi img {
+    border-radius: 16px;
+}
+
+.equipoEcoPafi h2{
+    font-family: Poppins, sans-serif;
+    color: #483C1F;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.equipoEcoPafi div {
+    background-color: #CBDEBA;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 4px rgb(134, 133, 133);
+}
+
+/* Responsive Styles */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .welcome h1 {
+        font-size: 60px;
+    }
+
+    .info-ecoPafi h1 {
+        font-size: 48px;
+    }
+
+    .info-ecoPafi p {
+        font-size: 20px;
+        padding: 0 100px;
+    }
+
+    .vision, .mision {
+        width: 45%;
+        padding: 40px 60px;
+    }
+
+    .vision h1, .mision h1 {
+        font-size: 40px;
+    }
+
+    .vision p, .mision p {
+        font-size: 20px;
+    }
+
+    .teamMembers h1 {
+        font-size: 48px;
+    }
+
+    .equipoEcoPafi h2{
+        font-size: 18px;
+    }
+
+    .equipoEcoPafi {
+        gap: 50px;
+    }
+
+    .equipoEcoPafi div {
+        padding: 30px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .welcome h1 {
+        font-size: 48px;
+    }
+
+    .welcome h3 {
+        font-size: 20px;
+    }
+
+    .info-ecoPafi h1 {
+        font-size: 36px;
+    }
+
+    .info-ecoPafi p {
+        font-size: 18px;
+        padding: 0 30px;
+    }
+
+    .vision, .mision {
+        width: 80%;
+        padding: 30px 20px;
+    }
+
+    .vision h1, .mision h1 {
+        font-size: 32px;
+    }
+
+    .vision p, .mision p {
+        font-size: 18px;
+    }
+
+    .teamMembers h1 {
+        font-size: 36px;
+    }
+
+    .equipoEcoPafi h2{
+        font-size: 14px;
+    }
+
+    .equipoEcoPafi {
+        gap: 20px;
+    }
+
+    .equipoEcoPafi div {
+        padding: 20px;
+    }
+
+    .equipoEcoPafi img {
+        width: 100px;
+        height: auto;
+    }
+
+    .equipoEcoPafi h2 {
+        font-size: 18px;
+    }
+}

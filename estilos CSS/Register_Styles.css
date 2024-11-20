@@ -1,0 +1,207 @@
+/*Parte Pafi*/
+
+/*Login*/
+.main{
+    background: #CBDEBA;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #CBDEBA;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 1800px; /* Cambiado de 900px a 1200px para mayor ancho */
+    margin: 20px; /* Añadido un margen para evitar que quede pegado a los bordes */
+}
+
+/* Sección del formulario */
+.form-section {
+    box-sizing: border-box;
+    flex: 1 1 60%; /* Cambiado para que ocupe más espacio relativo (70% del contenedor) */
+     /* Incrementado el relleno interno para una apariencia más amplia */
+    box-sizing: border-box;
+}
+
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para las etiquetas y entradas */
+
+.form-section form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #483C1F;
+    border-radius: 100px;
+    height: 20px; 
+    box-shadow: 0px 4px 4px rgb(134, 133, 133);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+/* Enlace para "¿Olvidó su contraseña?" */
+.forgot-password {
+    margin-bottom: 15px;
+    font-family: 'Nunito';
+    font-size: 20px;
+    color: #61462E;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+/* Botones sociales */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.social-buttons .social-btn {
+    width: 40px;
+    height: 40px;
+    background: none; /* Fondo transparente */
+    border: none; /* Sin borde */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%; /* Botón circular */
+}
+
+.social-buttons .social-btn img {
+    width: 100%; /* El ícono ocupa todo el botón */
+    height: auto; /* Mantener proporción */
+}
+
+
+/* Botón de registro */
+.register-btn {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #218838;
+}
+
+/* Sección del logo */
+.logo-section {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #CBDEBA;
+    max-width: 90%; /* Reduce el tamaño si se extiende demasiado */
+    height: auto; /* Mantiene proporción */
+}
+
+.logo-section img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 30%; /* Cambiado para ocupar el 30% del ancho del contenedor */
+}
+
+/*Extras*/
+.title-login{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 48px;
+    color: #419F34;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subtitle-login{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20px;
+    color: #61462E;
+    margin-bottom: 5px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.other-text{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 24px;
+    color: #419F34;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input::placeholder {
+    color: #483C1F; 
+    font-family: 'Nunito';
+    opacity: 1;
+}
+
+.btn{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #419F34;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgb(134, 133, 133);
+    width: 200px; 
+    height: 20px; 
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.btn:hover {
+    background-color: #28551D; 
+}
+
+.boton-regreso{
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+    position: absolute;
+    top:220px;
+    left: 70px;
+    border: 0;
+    background-image: url(img/background/return-arrow.png) ;
+    background-size: 190%;
+    background-position: center;
+    cursor:pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .form-section {
+        flex: 1 1 100%;
+    }
+
+    .logo-section{
+        display: none;
+    }
+}

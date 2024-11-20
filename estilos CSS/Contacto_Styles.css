@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    background-image: url("img/background/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* CONTACTO STYLES*/
+        /*Form*/
+        .escribenos {
+            padding: 30px 150px;
+            margin-bottom: 10px;
+            margin-top: 120px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        
+        .form-contenido h2 {
+            font-family: Poppins, sans-serif;
+            color: white;
+            font-weight: 600;
+            font-size: 48px;
+            padding: 10px;
+            margin-top: 0;
+        }
+        
+        .form-contenido {
+            background-color: #419f34;
+            box-shadow: 0px 4px 4px rgb(134, 133, 133);
+            border-radius: 16px;
+            padding: 100px;
+            width: 1000px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            font-size: 1rem;
+            font-family: nunito, sans-serif;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        input,
+        textarea {
+            padding: 10px 10px;
+            border-radius: 1rem;
+            font-size: 1rem;
+            font-family: nunito, sans-serif;
+            font-weight: 400;
+            margin-bottom: 10px;
+            border: 0;
+            box-shadow: 0px 4px 4px rgb(134, 133, 133);
+        }
+        
+        :focus {
+            outline: 1px solid #483c1f;
+        }
+        
+        .btn {
+            background-color: #483c1f;
+            width: 250px;
+            align-self: flex-end;
+            cursor: pointer;
+            color: #cbdeba;
+            margin-top: 20px;
+        }
+        
+        .btn:hover {
+            background-color: #cbdeba;
+            outline: 1px solid #483c1f;
+            color: #483c1f;
+        }
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+    /* Tablet */
+    .escribenos {
+        padding: 30px 50px;
+    }
+
+    .form-contenido {
+        padding: 60px;
+        width: 90%;
+    }
+
+    .form-contenido h2 {
+        font-size: 36px;
+    }
+
+    label,
+    input,
+    textarea {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 200px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Móviles */
+    .escribenos {
+        padding: 20px 20px;
+    }
+
+    .form-contenido {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .form-contenido h2 {
+        font-size: 28px;
+        padding: 5px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 0.9rem;
+        align-self: center;
+    }
+}

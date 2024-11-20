@@ -1,0 +1,254 @@
+/* General Styles */
+body {
+    margin: 0;
+    background-image: url("img/background/fondo.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* DESCARGAR STYLES*/
+        /*Celu*/
+        .descargar-app{
+            padding: 100px;
+        }
+
+        .pantallaInfo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .pantallaInfo h1{
+            color: #419F34;
+            padding: 50px;
+            font-family: Poppins, sans-serif;
+            font-size: 92px;
+            font-weight: 500;
+            width: 60%;
+        }
+
+        /*Descripcion Top*/
+        .info1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            flex-wrap: wrap;
+            gap: 150px;
+            
+        }
+
+        .gesPlan{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #CBDEBA;
+            border-radius: 16px;
+            box-shadow: 0px 4px 4px rgb(134, 133, 133);
+            padding:  50px 100px;
+            max-width: 600px;
+        }
+
+        .gesPlan img{
+            padding: 10px;
+        }
+
+        .InfoGes{
+            margin-right: 20px;
+        }
+
+        .guias{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #CBDEBA;
+            border-radius: 16px;
+            box-shadow: 0px 4px 4px rgb(134, 133, 133);
+            padding:  50px 100px;
+            max-width: 600px;
+        }
+
+        .guias img{
+            padding: 10px;
+        }
+
+        .InfoGuias{
+            margin-right: 20px;
+        }
+
+        .infoApp h2{
+            color: #483C1F;
+            font-family: Poppins, sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            
+        }
+
+        .infoApp p{
+            color: #483C1F;
+            font-family: Nunito, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: justify;
+
+        }
+
+        /*Descripcion Bottom*/
+
+        .info2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            flex-wrap: wrap;
+            gap: 150px;
+            
+        }
+
+        .ia{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #CBDEBA;
+            border-radius: 16px;
+            box-shadow: 0px 4px 4px rgb(134, 133, 133);
+            padding:  50px 100px;
+            max-width: 600px;
+        }
+
+        .ia img{
+            padding: 10px;
+        }
+
+        .InfoIa{
+            margin-right: 20px;
+        }
+
+
+        .task{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #CBDEBA;
+            border-radius: 16px;
+            box-shadow: 0px 4px 4px rgb(134, 133, 133);
+            padding:  50px 100px;
+            max-width: 600px;
+        }
+
+        .task img{
+            padding: 10px;
+        }
+
+        .InfoTask{
+            margin-right: 20px;
+        }
+
+        .infoApp h2{
+            color: #483C1F;
+            font-family: Poppins, sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            
+        }
+
+        .infoApp p{
+            color: #483C1F;
+            font-family: Nunito, sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: justify;
+
+        }
+
+/* Responsive para tabletas */
+@media (max-width: 1024px) {
+    /* Ajusta el tamaño de la sección de descarga */
+    .descargar-app {
+        padding: 50px;
+    }
+
+    .pantallaInfo {
+        flex-direction: column;
+    }
+
+    .pantallaInfo h1 {
+        font-size: 60px;
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .imgCel {
+        width: 300px;
+        height: auto;
+    }
+
+    /* Ajuste para las secciones de información */
+    .info1, .info2 {
+        gap: 50px;
+        padding: 20px;
+    }
+
+    .gesPlan, .guias, .ia, .task {
+        padding: 30px;
+        max-width: 500px;
+    }
+
+    .infoApp h2 {
+        font-size: 20px;
+    }
+
+    .infoApp p {
+        font-size: 14px;
+    }
+}
+
+/* Responsive para teléfonos móviles pequeños */
+@media (max-width: 480px) {
+    /* Ajuste de la sección de descarga */
+    .descargar-app {
+        padding: 20px;
+    }
+
+    .pantallaInfo h1 {
+        font-size: 36px;
+        padding: 10px;
+    }
+
+    .imgCel {
+        width: 200px;
+        height: auto;
+    }
+
+    /* Ajuste de la sección de información */
+    .info1, .info2 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .gesPlan, .guias, .ia, .task {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .infoApp h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .infoApp p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .InfoGes, .InfoGuias, .InfoIa, .InfoTask {
+        margin-right: 0;
+        text-align: center;
+    }
+}

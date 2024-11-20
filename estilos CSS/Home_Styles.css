@@ -1,0 +1,205 @@
+/* Home Page */
+.main {
+    background-color: #CBDEBA;
+    margin: auto;
+ /* Añadido padding para evitar que el contenido toque los bordes en pantallas pequeñas */
+}
+
+.container-homepage {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Usar min-height para que el contenido ocupe al menos la altura de la pantalla */
+    background-color: #CBDEBA;
+}
+
+.homepage {
+    display: flex;
+    flex-wrap: nowrap; /* Mantener los elementos en una sola fila */
+    justify-content: space-between; /* Separar los lados */
+    width: 100%;
+    max-width: 1800px; /* Limitar el ancho máximo */
+    height: 720px;
+    margin: 20px auto; /* Centrar con margen automático */
+    border: 2px solid #419F34;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Parte IZQUIERDA */
+.barraVerde {
+    flex: 1 1 30%; /* Toma el 30% del espacio disponible */
+    height: auto; /* Ajusta la altura automáticamente */
+    background-color: #419F34;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bienvenido {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Botón para imagen de perfil */
+.button-profile {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.imagen-profile {
+    border: 3px solid #419F34;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(134, 133, 133, 0.5);
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.nombre-usuario {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Botón para las imágenes de las plantas */
+.button-plantas {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.plantas-fotos {
+    display: grid; /* Cambiamos a grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    grid-template-rows: repeat(2, auto); /* 2 filas con alturas automáticas */
+    gap: 10px; /* Espaciado entre imágenes */
+    justify-content: center; /* Centrar la cuadrícula */
+    align-items: center; /* Alinear elementos en el centro */
+    margin-top: 20px;
+}
+
+/* Las imágenes conservan su tamaño y forma */
+.plantas-fotos img {
+    width: 160px; /* Ancho fijo */
+    height: 180px; /* Alto fijo */
+    border-radius: 10px;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+}
+
+.logout {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #CBDEBA;
+    text-decoration: none;
+    display: block;
+}
+
+/* Parte DERECHA */
+.main-content {
+    flex: 1 1 70%; /* Toma el 70% del espacio disponible */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Siempre 2 columnas */
+    grid-template-rows: repeat(2, 1fr); /* Siempre 2 filas */
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box; /* Incluir padding dentro del tamaño total */
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #419F34;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(134, 133, 133, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 8px rgba(134, 133, 133, 0.5);
+}
+
+.texto-boton {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.imagen-boton {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* Media Queries */
+
+/* Tablets y dispositivos medianos */
+@media (max-width: 768px) {
+    .homepage {
+        flex-direction: column; /* Elementos en columna */
+        height: auto;
+    }
+
+    .barraVerde {
+        flex: 1 1 100%; /* Barra ocupa todo el ancho */
+        height: auto;
+    }
+
+    .main-content {
+        flex: 1 1 100%; /* Contenido ocupa todo el ancho */
+        grid-template-columns: repeat(2, 1fr); /* Mantener 2 columnas */
+        gap: 10px; /* Reducir espacio entre elementos */
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 1rem; /* Reducir tamaño de texto */
+    }
+
+    .imagen-boton {
+        width: 50px; /* Ajustar tamaño de imagen */
+        height: 50px;
+    }
+
+    .plantas-fotos {
+        display: grid; /* Cambiamos a grid layout */
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+        grid-template-rows: repeat(2, auto); /* 2 filas con alturas automáticas */
+        gap: 10px; /* Espaciado entre imágenes */
+        justify-content: center; /* Centrar la cuadrícula */
+        align-items: center; /* Alinear elementos en el centro */
+        margin-top: 20px;
+    }
+    
+    /* Las imágenes conservan su tamaño y forma */
+    .plantas-fotos img {
+        width: 160px; /* Ancho fijo */
+        height: 180px; /* Alto fijo */
+        border-radius: 10px;
+        object-fit: cover; /* Asegura que la imagen no se deforme */
+    }
+}

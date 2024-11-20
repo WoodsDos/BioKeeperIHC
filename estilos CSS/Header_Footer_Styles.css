@@ -1,0 +1,270 @@
+/*GENERAL*/
+body {
+    margin: 0;
+  }
+  
+  .main {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+  }
+  
+  /*HEADER*/
+  .cabecera {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #419f34;
+    color: white;
+    box-shadow: 0px 3px 3px rgb(65, 90, 65);
+    padding: 1.5rem 0;
+    z-index: 1000;
+  }
+  
+  .container-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .Logotext {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+  }
+  
+  .topheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .menu-horizontal li a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    margin-right: 100px;
+  }
+  
+  .menu-horizontal li a:hover {
+    color: #483c1f;
+    background-color: #cbdeba;
+  }
+  
+  .menu-vertical {
+    padding: 0;
+    position: absolute;
+    display: none;
+    color: #419f34;
+    list-style: none;
+    width: 200px;
+    background-color: #483c1f;
+  }
+  
+  .menu-horizontal li:hover .menu-vertical {
+    display: block;
+  }
+  
+  .menu-vertical li:hover {
+    background-color: #cbdeba;
+  }
+  
+  .footer-section {
+    background-color: #419f34;
+    color: white;
+    padding: 50px 20px;
+    font-family: Poppins, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .footer-column,
+  .footer-column-img,
+  .footer-column-AppStores {
+    flex: 1;
+    min-width: 150px;
+    max-width: 250px;
+  }
+  
+  .footer-column h3,
+  .footer-column-img h3 {
+    font-size: 1.2rem;
+    border-bottom: 2px solid #483c1f;
+    padding-bottom: 10px;
+  }
+  
+  .footer-column ul,
+  .footer-column-img ul,
+  .footer-column-AppStores ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li,
+  .footer-column-img ul li,
+  .footer-column-AppStores ul li {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .footer-column ul li a,
+  .footer-column-img ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: nunito, sans-serif;
+    font-size: 0.9rem;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #483c1f;
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    color: white;
+    text-align: center;
+    background-color: #419f34;
+    padding: 15px;
+    font-family: Nunito, sans-serif;
+    font-size: 0.9em;
+  }
+
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  
+  /*RESPONSIVE*/
+
+  /* Escondemos el botón de menú en pantallas grandes */
+
+  .open-menu {
+    display: none;
+  }
+  
+  /* Media Queries para Responsive Design */
+  @media (max-width: 1540px) {
+    .container-head {
+      flex-direction: column;
+    }
+  
+    .logo {
+      margin-bottom: 10px;
+    }
+  
+    .menu-horizontal {
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 10%;
+      display: none; /* Escondemos el menú por defecto */
+    }
+  
+    .menu-horizontal.menu_opened {
+      display: flex; /* Mostramos el menú cuando está abierto */
+    }
+  
+    .open-menu {
+      display: block;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.3rem;
+      cursor: pointer;
+      align-self: flex-start; /* Alineamos el botón a la izquierda */
+    }
+    .pantallaInfo h1 {
+      text-align: center;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column,
+    .footer-column-img,
+    .footer-column-AppStores {
+      max-width: 300px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    .footer-column-AppStores ul li img {
+      width: 150px;
+    }
+  }
+  
+
+
+  @media (max-width: 480px) {
+    .Logotext {
+      font-size: 1.7rem;
+    }
+  
+    .menu-horizontal {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-horizontal li a {
+      padding: 10px 5px;
+      font-size: 16px;
+    }
+
+    .footer-section {
+      padding: 30px 15px;
+    }
+  
+    .footer-column,
+    .footer-column-img,
+    .footer-column-AppStores {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .footer-column ul li,
+    .footer-column-img ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .footer-column-AppStores ul li img {
+      width: 120px;
+    }
+
+    .footer-bottom {
+      font-size: 0.8em;
+    }
+
+  }
+  
+
+  

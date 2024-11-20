@@ -1,0 +1,823 @@
+/*General*/
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+body{
+    margin: 0;
+    background-color: #CBDEBA;
+}
+
+.container{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cabecera {
+    z-index: 999;
+}
+
+/*MIS PLANTAS*/
+.mis--plantas {
+    margin: 1.2rem;
+    display: flex;
+    height: auto;
+    background-color: #fff;
+    border: 2px solid #419F34;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mis--plantas h2 {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #3a311c;
+    margin: 2rem 0;
+    font-size: 2rem !important;
+    min-width: 9rem ; 
+    text-decoration: underline;
+    font-size: 1rem;
+    max-height: 10px; 
+}
+
+.mis--plantas .ir--atras {
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+}
+
+.mis--plantas div a img {
+    margin: 10px 10px;
+}
+
+.menu--left {
+    padding: 1rem;
+    background-color: #419F34;
+    list-style: none;
+    height: auto;
+    color: #fff;
+    font-family:  'Poppins', sans-serif;
+    font-size: 18px;
+    padding-right: 40px;
+    width: 16rem;
+}
+
+.opciones--left {
+    margin-top: 20px;
+}
+
+.menu--left li a, .info--planta .cuidado--planta a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: 0.5s ease;
+    padding: 0;
+}
+
+.menu--left li a:hover, .info--planta {
+    transform: scale(1.01);
+    transition: 0.5s ease;
+    box-shadow: 0 0.1rem #fff;
+}
+
+.opciones--left__etiqueta {
+    margin-top: 3.5rem; 
+}
+
+.opciones--left ul {
+    text-align: left;
+    padding: 0;
+    margin-left: 15px;
+}
+
+/* LISTA PLANTAS */
+.lista--plantas {
+    width: 100%; 
+    height: auto; 
+    overflow: auto; 
+    padding: 10px;
+}
+
+.lista--plantas::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+}
+
+.search-bar {
+    width: 80%;
+    font-size: .8rem;
+    height: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    border: 1.5px solid #483C1F;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.search-bar:hover {
+    box-shadow: 0px 0px 20px -17px;
+    background: rgb(236,236,236);
+    background: radial-gradient(circle, rgba(236,236,236,1) 0%, rgba(254,234,212,1) 64%); 
+}
+
+.search-bar:focus {
+    border: 2px solid #3a311c;
+}
+
+.plant-grid {
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.plant-card {
+    border: 2px solid #419F34;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.plant-card img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    display: block;
+}
+
+.plant-card a {
+    display: block;
+    font-weight: bold;
+    color: #483C1F;
+    background-color: #CBDEBA;
+    text-decoration: none;
+    padding: 10px;    
+}
+
+.add-plant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #419F34;
+    color: #555;
+    font-size: 18px;
+}
+
+.add-plant p {
+    color: #483C1F;
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.add-plant a {
+    font-size: 100px;
+    background: none ;
+}
+
+/* DETALLE PLANTA */
+.info--planta {
+    margin: 6rem 0;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    height: auto; 
+    width: 80%;
+    box-sizing: border-box;
+    gap: 2rem;
+}
+
+.info--planta::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.box {
+    display: flex; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    font-size: 1.5rem; 
+    border-radius: 5px;
+    overflow: visible; 
+    transform: translateX(-6rem); 
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.box img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    background: contain center no-repeat;
+}
+
+.informacion--planta {
+    border: 2px solid #419F34;
+    padding: 0 10px 0;
+    background-color: #CBDEBA;
+}
+
+.informacion--planta p {
+    margin-top: 2.5rem;
+    margin-left: -11.5rem;
+}
+
+.info--planta h3 {
+    font-family: "Poppins",sans-serif;
+    color: #419F34;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.info--planta .informacion--planta p, .info--planta .cuidado--planta p {
+    font-family: "Poppins",sans-serif;
+    color: #483C1F;
+    font-size: 12.5px;
+}
+
+.cuidado--planta {
+    padding: 0 10px;
+    border: 2px solid #419F34;
+    background-color: #CBDEBA;
+    margin-right: 8rem;
+    list-style-type: none;
+}
+
+.fecha {
+    margin-top: 3rem;
+    margin-left: -8rem;
+    width: 135px;
+}
+
+.cuidado--planta li ol {
+    font-size: 12.5px;
+    margin-top: 5rem;
+    margin-left: -11rem;
+    color: #3a311c
+}
+
+.cuidado--planta a {
+    color: #3a311c !important;
+    margin: 7rem 0 1rem -8.5rem;
+    font-size: 14px;
+}
+
+.cuidado--planta a:hover {
+    text-decoration: underline;
+}
+
+.progreso--planta {
+    background-color: #CBDEBA;
+    border: 2px solid #419f34;
+    margin-right: 35px;
+    padding-left: 15px;
+}
+
+.progreso--planta p {
+    justify-content:flex-start;
+    margin-left: -7rem;
+    margin-top: 2.5rem;
+    font-size: 13px;
+    color:#483C1F;
+}
+
+.progreso--planta img {
+    margin: 4rem 0 2rem -5.3rem;
+    width: 7rem;
+    height: auto;
+}
+
+.añadir--progreso {
+    background-color: #fff;
+    justify-content: flex-end;
+    text-align: center;
+    border: 2px solid #419F34;
+    width: 7rem;
+    height: 5.4rem;    
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+.añadir--progreso p {
+    margin: -.2rem 0 .8rem 0;
+    font-size: 1.5rem;   
+    height: 5px;
+}
+
+.añadir--progreso a {
+    text-decoration: none;
+}
+
+.progreso--planta .añadir--progreso .añadir {
+    color: #483C1F;
+    font-size: 4rem;   
+}
+
+
+/*AÑADIR PLANTA*/
+.añadir--img {
+    background-color: #419F34;
+    border: 2px solid #419F34;
+    margin-right: 6rem;
+    cursor:pointer;
+}
+
+.añadir--img h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.añadir--info {
+    cursor: pointer
+}
+
+.primer--progreso {
+    background-color: #fff;
+    position: absolute;
+    top: 31rem;
+    text-align: center;
+    border: 2px solid #419F34;
+    height: 5.5rem;
+    margin-left: -4px;
+
+}
+
+.primero {
+    margin-left: -6rem;
+}
+
+.primer--progreso p {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+}
+
+.primer--progreso a {
+    text-decoration: none;
+    color: #483C1F;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.añadir--planta {
+    left: 68rem;
+    position: absolute;
+    height: 2rem;
+    margin-top:  3rem;
+    cursor: pointer;
+    background-color: #419F34;
+    color: #FFF;
+    border: 1px solid #419F34;
+    border-radius:  15px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 4px;
+}
+
+/* GUIAS */
+.info--guia {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    margin-bottom: 4rem;
+}
+
+.buscar--guia {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.search-bar.guia {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+
+.añadir--guia {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.card--section {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 0 2rem;
+}
+
+.card--section img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card--section__content {
+    flex: 1;
+}
+
+.card--section__content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card--section__content p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.card--section__content a {
+    text-decoration: none;
+}
+
+
+.añadir--guia:hover {
+    transform: scale(1.1);
+}
+
+
+/* VER GUIA ESPECÍFICA */
+.section--guias {
+    max-width: 80%;
+    height: auto;
+}
+
+.img-container-guia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 2rem; 
+}
+
+.img-container-guia img {
+    max-width: 100%;
+    height: auto;
+}
+
+.informacion--guia h3{
+    color: #419F34;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.informacion--guia {
+    width: 80%;       
+    margin: 0 auto;   
+    padding: 20px;     
+    border-radius: 8px;  
+    background-color: #f9f9f9; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;      
+    text-align: center;       
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    min-width: 120px;
+    word-wrap: break-word;
+}
+
+.p--guia {
+    border: 1px solid #419F34;  /* Borde opcional */
+}
+
+.informacion--guia p {
+    font-size: 13px;
+    justify-content: center;
+    margin-bottom:  5px;
+    padding-left: 15px;
+}
+
+/* ENVIAR GUIA */
+.form--guia h3 {
+    color: #3a311c;
+}
+
+.form--guia h3:first-of-type {
+    margin-top: 3rem ;
+}
+
+.form--guia input, .form--guia select {
+    border-radius: 10px;
+    border: 1px solid #3a311c;
+    height: 20px;
+    width: 400px;
+}
+
+.form--guia h2 {
+    margin: 7rem 0;
+}
+
+.form--guia h2 a {
+    background-color: #419F34;
+    padding: 4rem;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.fixed--size--textarea {
+    border-top: 1.5rem solid #419F34;
+    resize: none;
+    width: 80%;
+    height: 200px;
+    max-width: 80%;
+}
+
+#enviar {
+    width: 5rem;
+    height: 1.3rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    background-color: #419F34;
+    transition: .3s ease;
+    border: 1px solid #419F34;
+    border-radius: 10px;
+}
+
+#enviar:hover {
+    transform: scale(1.1);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width:1535px){
+    
+    .main{
+
+        margin-top: 50px;
+        
+        }
+
+}
+
+@media (max-width: 768px) {
+
+
+
+    .lista--plantas {
+        margin-right: 10px;
+    }
+    .menu--left {
+        width: 35%;
+        height: auto;
+    }
+    .menu--left .ir--atras {
+        width: 25px;
+        margin-left: -10px;
+    }
+    .menu--left li {
+        font-size: 13px;
+    }
+    .menu--left a{
+        font-size: 11px;
+    }
+    .informacion--guia {
+        width: 90%;  
+        padding: 15px;  
+    }
+}
+@media (max-width: 968px) {
+    .info--planta {   
+        grid-template-columns: 1fr; /* 1 columna */
+        grid-template-rows: repeat(4, auto); /* 4 filas */
+        height: 80%; 
+        padding-left: 6rem;
+        margin-left: -10rem;
+    }
+    .mis--plantas {
+        height: auto;
+    }
+    .info--guia {
+        grid-template-columns: 1fr; /* 1 columna */
+        grid-template-rows: repeat(2, auto); /* 4 filas */
+        height: 80%; 
+        padding-left: 6rem;
+        margin-left: -3rem;
+    }
+    .card--section {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        margin-left: -1rem;
+    }   
+    .info--guia img {
+        width: 100%;
+    }
+    .info--guia h3 {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    .info--guia p {
+        font-size: .8rem;
+    }
+
+    .menu--left {
+        height: auto;
+    }
+
+    .buscar--guia {
+        margin-left: -4rem;
+    }
+
+    .form--guia {
+        width: 300px;
+    }
+
+    .form--guia h2 {
+        margin-top: 3rem;
+    }
+
+    .form--guia h2 a{
+        font-size: .5rem;
+        width: 70%;
+    }
+
+    .form--guia select, .form--guia input {
+        width: 100px;
+    }
+}
+
+@media (max-width: 600px) {
+    .box {
+        max-width: 100%;
+        overflow: hidden; 
+        box-sizing: border-box; 
+    }
+    .box h3 {
+        font-size: 1.2rem;
+        margin: 0;
+        text-align: center;
+    }
+    .box p {
+        font-size: .6rem;
+        margin-left: -8rem;
+    }
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cuidado--planta p {
+        justify-content: flex-start;
+        margin-top: 3rem;
+        margin-left: -5rem;
+    }
+    .progreso--planta {
+        flex-direction: column;
+    }   
+    .progreso--planta p {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: center;      
+        margin: 0;
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+    .progreso--planta img {
+        width: 80%;
+        height: auto;
+        margin-top: 0;
+        margin-left: .5rem;
+    }
+    .añadir--progreso {
+        width: 80%;
+        margin: 0 .5rem 1rem;
+    }
+    .añadir--progreso a p{
+        margin-left: -.2rem;
+    }
+    .buscar--guia {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .search-bar.guia {
+        max-width: 70%; 
+        margin-bottom: 0.5rem;
+    }
+    .añadir--guia {
+        width: auto; 
+        margin: 0 auto; 
+        display: inline-block; 
+        margin-top: 1rem;
+    }
+    .form--guia h3 {
+        font-size: 1rem;
+    }
+    .form--guia h2 {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        width: 100px;
+        max-width: 200px;      
+    }
+    .form--guia h2 a{
+        width: 100%;
+        padding: 2rem;
+    }
+    .fixed--size--textarea {
+       max-width: 150px;
+    }
+    .mis--plantas h2 {
+        font-size: 1rem !important;
+    }
+    .plant-card {
+        width: 100%; 
+    }
+    .search-bar {
+        margin-left: 1rem;
+    }
+    .guia {
+        margin-left: 2rem;
+    }
+    .ver--guia {
+        max-width: 85%;
+    }
+
+    .volver {
+        display: inline-block;
+    }
+
+    .informacion--guia{
+        width: 200px; 
+        font-size: .5rem;
+        padding: 0 5px;  
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-left: -3rem;
+    }
+
+    .img-container-guia {
+        width: 60%;
+    }
+    .p--guia {
+        max-width: 95%;
+        padding: 5px 0;
+        margin: 0;
+    }
+    .p--guia p {
+        width: 90%;
+        font-size: 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .menu-horizontal .menu-horizontal_hijo{
+        align-items: center; 
+        margin-left: -45px;
+    }
+}
+@media (max-width: 300px) {
+    .search-bar {
+        width: 80%; 
+        font-size: 0.7rem; 
+    }
+    .plant-card {
+        width: 80%; 
+    }
+}
+
+@media (max-width: 368px) {
+    
+    .mis--plantas--column {
+        flex-direction: column; 
+    }
+    .menu--left {
+        width: 100%;
+        padding-right: 20px;
+    }
+    .form--guia {
+        margin-top: 0;
+        margin-left: 2rem;
+    }
+    .form--guia h3 {
+        font-size: .8rem;
+    }
+    .informacion--guia {
+        margin-left: 2rem;
+    }
+}

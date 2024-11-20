@@ -1,0 +1,201 @@
+body {
+  background-color: #cbdeba;
+}
+
+/*Container Perfil*/
+.container-menu {
+  box-sizing: border-box;
+  display: flex;
+  width: 96%;
+  margin: 0 auto;
+  margin-right: 13px;
+}
+
+/*Sidebar*/
+.sidebar {
+  background-color: #419f34;
+  width: 310px;
+  padding: 10px;
+  color: black;
+  font-family: "Nunito", sans-serif;
+  z-index: 1;
+}
+
+.sidebar h2.Ajustes {
+  font-size: 35px;
+  text-align: center;
+  margin-right: 20px;
+  filter: invert(1);
+}
+
+.sidebar h2 a.Cerrar-Sesion {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  margin-right: 20px;
+  text-decoration: none;
+  margin-left: 45px;
+}
+
+.sidebar ul {
+  list-style: none;
+  filter: invert(1);
+}
+
+.sidebar ul h2 {
+  font-size: 30px;
+}
+
+.sidebar ul li {
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+/*Iconos del sidebar*/
+.sidebar a img {
+  margin-bottom: -15px;
+}
+
+.sidebar li img {
+  margin-right: 20px;
+}
+
+/*Imagen perfil*/
+.Perfil-Usuario {
+  flex: 1;
+  padding: 40px;
+  background-color: white;
+  border: 2px solid #419f34;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.Perfil-Usuario img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.Perfil-Usuario a {
+  color: #4caf50;
+  font-size: 15px;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+}
+/*perfil info*/
+.informacion-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.informacion-perfil label {
+  font-size: 16px;
+  color: #419f34;
+  font-family: "Nunito", sans-serif;
+}
+
+.informacion-perfil input[type="text"],
+.informacion-perfil input[type="email"],
+.informacion-perfil input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+  background-color: #d1f3d1;
+  color: #333;
+  font-family: "Nunito", sans-serif;
+}
+/*Botones del perfil*/
+.input-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.change-btn {
+  background-color: #61462e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.change-btn:hover {
+  background-color: #483c1f;
+}
+
+.botones {
+  display: flex;
+  gap: 15px;
+}
+
+.action-btn {
+  background-color: #61462e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.action-btn:hover {
+  background-color: #483c1f;
+}
+
+@media (max-width: 1100px) {
+  .container-menu {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-right: 5px;
+  }
+
+  .sidebar {
+    display: flex;
+    width: 93%;
+  }
+  .sidebar h2.Ajustes {
+    margin-top: 130px;
+  }
+
+  .sidebar li img {
+    display: none;
+  }
+}
+
+@media (max-height: 830px) {
+  .container-menu {
+    flex-direction: column;
+    margin-top: 100px;
+    margin-right: 5px;
+  }
+  .sidebar {
+    display: flex;
+    width: 93%;
+  }
+  .sidebar h2.Ajustes {
+    margin-top: 130px;
+  }
+  .sidebar li img {
+    display: none;
+  }
+}
