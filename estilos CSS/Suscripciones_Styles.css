@@ -119,7 +119,7 @@ body{
     .planFree,
     .planVIP {
         padding: 60px;
-        width: 70%;
+        width: 80%;
     }
 
     .planFree h1,
@@ -149,9 +149,8 @@ body{
 
     .planFree,
     .planVIP {
-        margin: auto
         padding: 30px;
-        width: 80%;
+        width: 70%;
     }
 
     .planFree h1,
@@ -183,7 +182,7 @@ body{
     .planFree,
     .planVIP {
         padding: 20px;
-        width: 100%;
+        width: 70%;
     }
 
     .planFree h1,
