@@ -197,6 +197,7 @@ body {
     .gesPlan, .guias, .ia, .task {
         padding: 30px;
         max-width: 500px;
+        flex-wrap: wrap;
     }
 
     .infoApp h2 {
@@ -246,6 +247,7 @@ body {
         font-size: 14px;
         text-align: center;
     }
+
 
     .InfoGes, .InfoGuias, .InfoIa, .InfoTask {
         margin-right: 0;
