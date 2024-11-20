@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>BioKeeper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilo Header Footer -->
+    <link rel="stylesheet" href="estilos CSS/Header_Footer_Styles.css">
+
+    <!-- Estilo De la Página -->
+    <link rel="stylesheet" href="estilos CSS/Contacto_Styles.css">
+
+    <!-- Archivo JS -->
+    <script type="module" src="scripts.js"></script>
+
+    <!-- Agregamos las fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Header-->
+    <header class="cabecera">
+            <div class="container-head">
+                <button class="open-menu">☰</button>
+                <div class="logo">
+                    <img height="100" width="100" src="img/logo/lBlanco.png" alt="BioKeeper"/>
+                    <h1 class="Logotext">BioKeeper</h1>
+                </div>
+                <nav class="topheader">
+                    <ul class="menu-horizontal">
+                        <li><a href="index.html">Inicio</a>
+                            <ul class="menu-vertical">
+                                <li><a href="index.html#QuienesSomos">¿Quiénes Somos?</a></li>
+                                <li><a href="index.html#mision-vision">Misión y Visión</a></li>
+                                <li><a href="index.html#integrantes">Integrantes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contáctanos</a>
+                            <ul class="menu-vertical">
+                                <li><a href="#Escribenos">Escribenos</a></li>
+                                <li><a href="#footer-BK">Redes Sociales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="suscripciones.html">Suscripciones</a>
+                            <ul class="menu-vertical">
+                                <li><a href="suscripciones.html#planes">Planes</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="descargar.html">Descargar</a>
+                            <ul class="menu-vertical">
+                                <li><a href="descargar.html#infoApp">App Móvil</a></li>
+                            </ul>
+                        </li>
+                        <li class="Login"><a href="login.html">Acceder</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <!--Main-->
+    <main class="main">
+
+        <!--Escribenos-->
+
+        <section class="escribenos" id="Escribenos">
+
+        <div class="form-contenido">
+
+            <h2>Escríbenos</h2>
+
+            <form>
+
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" name="email" id="email">
+
+                <label for="subject">Asunto</label>
+                <input type="text" name="subject" id="subject">
+
+                <label for="coments">Comentarios</label>
+                <textarea name="coments" id="subject" cols="30" rows="5"></textarea>
+
+                <input class="btn" type="submit" value="Enviar">
+
+            </form>
+
+        </div>
+
+        </section>
+
+    </main>
+
+    <!--Diseño de Footer-->
+    <footer class="footer-section" id="footer-BK">
+
+            <!--Contenido del Footer-->
+            <div class="footer-container">
+    
+                <div>
+                    
+                    <img src="img/logo/lVerde.png" width="100px" height="100px" />
+    
+                </div>
+                <div class="footer-column">
+    
+                    <h3>Ayuda</h3>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Servicios Externos</a></li>
+                        <li><a href="#">Telefono</a></li>
+                    </ul>
+    
+                </div>
+                <div class="footer-column">
+    
+                    <h3>Politicas</h3>
+                    <ul>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                    </ul>
+    
+                </div>
+                <div class="footer-column">
+    
+                    <h3>AppMovil</h3>
+                    <ul>
+                        <li><a href="descargar.html">Descargar App Ahora</a></li>
+                    </ul>
+    
+                </div>
+                <!--Logo de Redes Sociales-->
+                <div class="footer-column-img">
+    
+                    <h3>Redes oficiales</h3>
+    
+                    <ul>
+                            <li>
+    
+                                <a href=""><img src="img/marcas/Instagram_LogoB.png" height="50" width="50"/></a>
+    
+                            </li>
+                            <li>
+    
+                                <a href=""><img src="img/marcas/Facebook_LogoB.png" height="50" width="50"/></a>
+    
+                            </li>
+                            <li>
+                                <a href=""><img src="img/marcas/Whatsapp_LogoB.png" height="50" width="50"/></a>
+                            </li>
+                    </ul>
+                </div>
+                <!--Logo App Store y Google Play-->
+                <div class="footer-column-AppStores">
+                    
+                <ul>
+                        <li>
+                            <a href="">
+                                <img src="img/marcas/AppStore_Logo.png" width="225" height="110" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span
+                                ><img src="img/marcas/GooglePlay_logo.png" width="185" height="65"
+                                /></span>
+                            </a>
+                        </li>
+                </ul>
+    
+                </div>
+            
+            </div>
+    
+    </footer>
+    
+    <!--Derechos de autor-->
+    <div class="footer-bottom">
+    
+          <p>© 2024 BioKeeper. Todos los derechos reservados</p>
+          
+    </div>
+
+
+
+
+</body>
+</html>

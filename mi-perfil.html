@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>BioKeeper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo Header Footer -->
+    <link rel="stylesheet" href="estilos CSS/Header_Footer_Styles.css">
+
+    <!-- Estilo De la Página -->
+    <link rel="stylesheet" href="estilos CSS/MiPerfil_Styles.css">
+
+    <!-- Archivo JS -->
+    <script type="module" src="scripts.js"></script>
+
+
+    <!-- Agregamos las fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="cabecera">
+        <div class="container-head">
+            <button class="open-menu">☰</button>
+            <div class="logo">
+                <img height="100" width="100" src="img/logo/lBlanco.png" alt="BioKeeper"/>
+                <h1 class="Logotext">BioKeeper</h1>
+            </div>
+            <nav class="topheader">
+                <ul class="menu-horizontal">
+                    <li><a href="index.html">Inicio</a>
+                        <ul class="menu-vertical">
+                            <li><a href="index.html#QuienesSomos">¿Quiénes Somos?</a></li>
+                            <li><a href="index.html#mision-vision">Misión y Visión</a></li>
+                            <li><a href="index.html#integrantes">Integrantes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contáctanos</a>
+                        <ul class="menu-vertical">
+                            <li><a href="contacto.html#Escribenos">Escribenos</a></li>
+                            <li><a href="contacto.html#footer-BK">Redes Sociales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="suscripciones.html">Suscripciones</a>
+                        <ul class="menu-vertical">
+                            <li><a href="suscripciones.html#planes">Planes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="descargar.html">Descargar</a>
+                        <ul class="menu-vertical">
+                            <li><a href="descargar.html#infoApp">App Móvil</a></li>
+                        </ul>
+                    </li>
+                    <li class="Login"><a href="login.html">Acceder</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--config y Perfil-->
+    <!--Sidebar-->
+
+    <!--Main-->
+<!--Main-->
+<main class="main">
+  <div class="container-menu">
+    <aside class="sidebar">
+      <a href="home.html"><img src="img/iconos/return-arrow.png" width="40" height="40" /></a>
+      <h2 class="Ajustes">Ajustes</h2>
+      <ul>
+        <section class="Cuenta">
+          <h2>Cuenta</h2>
+          <li>
+            <img src="img/Perfil/icono_usuario.png" width="30px" height="30px" /><a
+              href=""
+              >Mi cuenta</a
+            >
+          </li>
+          <li>
+            <img
+              src="img/Perfil/icono_notificaciones.png"
+              width="30px"
+              height="30px"
+            /><a href="">Notificaciones</a>
+          </li>
+        </section>
+      </ul>
+      <ul>
+        <section class="General">
+          <h2>General</h2>
+          <li>
+            <img src="img/Perfil/icono_seguridad.png" width="30px" height="30px" /><a
+              href=""
+              >Seguridad y Privacidad</a
+            >
+          </li>
+          <li>
+            <img src="img/Perfil/icono_suscripcion.png" width="30px" height="30px" /><a
+              href=""
+              >Suscripción</a
+            >
+          </li>
+          <li>
+            <img
+              src="img/Perfil/icono_preferencias.png"
+              width="30px"
+              height="30px"
+            /><a href="">Preferencias</a>
+          </li>
+          <li>
+            <img src="img/Perfil/icono_ayuda.png" width="30px" height="30px" /><a
+              href=""
+              >Ayuda</a
+            >
+          </li>
+        </section>
+      </ul>
+
+      <h2 class="Cerrar-Sesion">
+        <a href="" class="Cerrar-Sesion">Cerrar sesión</a>
+      </h2>
+    </aside>
+    <!--Mi perfil-->
+    <section class="Perfil-Usuario">
+      <form class="informacion-perfil">
+        <img src="img/Perfil/Imagen_Perfil.png" width="150" height="150" />
+        <a href="">Cambiar foto de perfil </a>
+        <label for="Nombres">Nombres: </label>
+        <input type="text" id="firstName" placeholder="Nombres" />
+        <label for="Apellidos">Apellidos: </label>
+        <input type="text" id="lastName" placeholder="Apellidos" />
+        <label for="NUsuario">Nombre de Usuario: </label>
+        <div class="input-button">
+          <input
+            type="text"
+            id="username"
+            placeholder="Nombre de Usuario"
+          />
+          <button class="change-btn">Cambiar usuario</button>
+        </div>
+        <label for="email">Correo electrónico: </label>
+        <div class="input-button">
+          <input type="email" id="email" placeholder="Correo Electronico" />
+          <button class="change-btn">Cambiar correo</button>
+        </div>
+        <label for="Contraseña">Contraseña: </label>
+        <div class="input-button">
+          <input
+            type="password"
+            id="password"
+            placeholder="******************"
+          />
+          <button class="change-btn">Cambiar contraseña</button>
+        </div>
+        <div class="botones">
+          <button class="action-btn">Ver mis guías</button>
+          <button class="action-btn">Ver mis plantas</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>BioKeeper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo Header Footer -->
+    <link rel="stylesheet" href="estilos CSS/Header_Footer_Styles.css">
+
+    <!-- Estilo De la Página -->
+    <link rel="stylesheet" href="estilos CSS/MisPlantas_Styles.css">
+
+    <!-- Archivo JS -->
+    <script type="module" src="scripts.js"></script>
+
+
+    <!-- Agregamos las fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="cabecera">
+        <div class="container-head">
+            <button class="open-menu">☰</button>
+            <div class="logo">
+                <img height="100" width="100" src="img/logo/lBlanco.png" alt="BioKeeper"/>
+                <h1 class="Logotext">BioKeeper</h1>
+            </div>
+            <nav class="topheader">
+                <ul class="menu-horizontal">
+                    <li><a href="index.html">Inicio</a>
+                        <ul class="menu-vertical">
+                            <li><a href="index.html#QuienesSomos">¿Quiénes Somos?</a></li>
+                            <li><a href="index.html#mision-vision">Misión y Visión</a></li>
+                            <li><a href="index.html#integrantes">Integrantes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contáctanos</a>
+                        <ul class="menu-vertical">
+                            <li><a href="contacto.html#Escribenos">Escribenos</a></li>
+                            <li><a href="contacto.html#footer-BK">Redes Sociales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="suscripciones.html">Suscripciones</a>
+                        <ul class="menu-vertical">
+                            <li><a href="suscripciones.html#planes">Planes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="descargar.html">Descargar</a>
+                        <ul class="menu-vertical">
+                            <li><a href="descargar.html#infoApp">App Móvil</a></li>
+                        </ul>
+                    </li>
+                    <li class="Login"><a href="login.html">Acceder</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main class="main">
+        <section class="mis--plantas guias mis--plantas--column">
+            <div class  ="menu--left"> 
+                <a href="home.html"><img class = "ir--atras" src="img/iconos/atras.png" alt="volover a tareas"> </a>
+                <li class="opciones--left"> Guias
+                    <ul><a href="#">Mis guias</a></ul>
+                    <ul><a href="#">Guias favoritas</a></ul>
+                    <ul><a href="#">Guias relevantes </a></ul>
+                </li>
+            </div>
+            <div class="info--guia">
+                <div class="buscar--guia">
+                    <input class="search-bar guia" type="search" placeholder="Buscar guías...">
+                    <a class="añadir--guia" href="añadir-guia.html">Añadir guía <span>+</span></a>
+                </div>
+                <div class="card--section">
+                    <img src="img/fotos/guia.png" alt="imagen guia"> 
+                    <div class="card--section__content"><a href="ver-guia.html">
+                        <h3>Cuidado de palmas en su hogar </h3>         
+                        <p>Las palmas en el hogar necesitan luz indirecta, riego moderado cuando el suelo está seco, 
+                            y buen drenaje. Pulveriza sus hojas para mantener la humedad, fertiliza en 
+                            primavera y verano, y limpia el polvo de las hojas para un crecimiento saludable.</p></a>
+                    </div>
+                </div>
+                <div class="card--section">
+                    <img src="img/fotos/guia.png" alt="imagen guia"> 
+                    <div class="card--section__content"><a href="#"> 
+                        <h3>Aprende a plantas y cuidar las margaritas</h3>           
+                        <p>Las margaritas en el hogar requieren luz directa o brillante, 
+                            riego regular cuando el suelo esté seco, y buen drenaje. Asegúrate 
+                            de cortar las flores marchitas para promover un nuevo crecimiento. 
+                            Fertiliza cada mes durante la temporada de crecimiento y mantenlas 
+                            en un lugar con buena circulación de aire.</p></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!--END-->
+</body>
+</html>

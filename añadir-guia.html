@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>BioKeeper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo Header Footer -->
+    <link rel="stylesheet" href="estilos CSS/Header_Footer_Styles.css">
+
+    <!-- Estilo De la Página -->
+    <link rel="stylesheet" href="estilos CSS/MisPlantas_Styles.css">
+
+    <!-- Archivo JS -->
+    <script type="module" src="scripts.js"></script>
+
+
+    <!-- Agregamos las fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--Header-->
+    <header class="cabecera">
+        <div class="container-head">
+            <button class="open-menu">☰</button>
+            <div class="logo">
+                <img height="100" width="100" src="img/logo/lBlanco.png" alt="BioKeeper"/>
+                <h1 class="Logotext">BioKeeper</h1>
+            </div>
+            <nav class="topheader">
+                <ul class="menu-horizontal">
+                    <li><a href="index.html">Inicio</a>
+                        <ul class="menu-vertical">
+                            <li><a href="index.html#QuienesSomos">¿Quiénes Somos?</a></li>
+                            <li><a href="index.html#mision-vision">Misión y Visión</a></li>
+                            <li><a href="index.html#integrantes">Integrantes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Contáctanos</a>
+                        <ul class="menu-vertical">
+                            <li><a href="contacto.html#Escribenos">Escribenos</a></li>
+                            <li><a href="contacto.html#footer-BK">Redes Sociales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="suscripciones.html">Suscripciones</a>
+                        <ul class="menu-vertical">
+                            <li><a href="suscripciones.html#planes">Planes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="descargar.html">Descargar</a>
+                        <ul class="menu-vertical">
+                            <li><a href="descargar.html#infoApp">App Móvil</a></li>
+                        </ul>
+                    </li>
+                    <li class="Login"><a href="login.html">Acceder</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main-->
+    <main class="main">
+
+        <section class="mis--plantas mis--plantas--column">
+            <div class  ="menu--left"> 
+                <li class="opciones--left"> Guias
+                    <ul><a href="#">Mis guias</a></ul>
+                    <ul><a href="#">Guias favoritas</a></ul>
+                    <ul><a href="#">Guias relevantes </a></ul>
+                </li>
+            </div>
+    
+            <div>
+                <a href="menu-guia.html"><img src="img/iconos/atras.png" width="30" height="30"></a>
+            </div>
+    
+            <div class="form--guia">
+                <h3>Título</h3>
+                <input size="40" type="text" name ="titulo" required placeholder="Añadir título...">
+                <h3 class="select--planta">Seleccionar planta</h3>
+                <select required name="opcion--planta">
+                    <option disabled selected></option>
+                    <option>Tulipan</option>
+                    <option>Rosa</option>
+                    <option>Cactus</option>
+                    <option>Margarita</option>
+                    <option>Girasol</option>
+                    <option>Otros</option>
+                </select>
+                <h2><a href="#">AÑADIR IMAGEN</a></h2>
+                <h3>Información</h3>
+                <div class="container--info">
+                    <textarea class="fixed--size--textarea" name = "info" required placeholder="Agregar texto..."></textarea>
+                </div>
+                <button id="enviar" value="Enviar">Enviar</button>
+            </div>        
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+</body>
+</html>
