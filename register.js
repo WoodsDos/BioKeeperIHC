@@ -17,6 +17,9 @@ registerButton.addEventListener("click", (event) => {
   } else if (!validateEmail(email)) {
     // Validación de correo electrónico
     alert("Por favor, ingrese un correo válido.");
+  } else if (!validateText(firstName) || !validateText(lastName)) {
+    // Validación de nombres y apellidos
+    alert("Nombres y apellidos solo deben contener letras y espacios.");
   } else if (password !== confirmPassword) {
     // Validación de coincidencia de contraseñas
     alert("Las contraseñas no coinciden.");
@@ -30,4 +33,10 @@ registerButton.addEventListener("click", (event) => {
 function validateEmail(email) {
   const re = /^[a-zA-Z0-9._]+@[a-zA-Z]+\.[a-zA-Z]{2,6}$/;
   return re.test(String(email).toLowerCase());
+}
+
+// Función para validar que solo contenga letras y espacios
+function validateText(text) {
+  const re = /^[a-zA-Z\s]+$/;
+  return re.test(String(text));
 }
